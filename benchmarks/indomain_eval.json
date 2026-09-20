@@ -1,0 +1,162 @@
+{
+  "clips": {
+    "20260411_100507.avi": {
+      "weapon_present": true,
+      "note": "replica pistol held beside the head, clearly visible",
+      "frames": 70
+    },
+    "20260228_224637.avi": {
+      "weapon_present": false,
+      "note": "person at desk, hands near face, no weapon",
+      "frames": 36
+    },
+    "20260422_142654.avi": {
+      "weapon_present": false,
+      "note": "face close to camera, hand near chin, no weapon",
+      "frames": 42
+    },
+    "20260728_191730.avi": {
+      "weapon_present": false,
+      "note": "canteen scene, several people, no weapon",
+      "frames": 71
+    }
+  },
+  "results": {
+    "positive": {
+      "0.15": {
+        "frames": 70,
+        "detected": 21,
+        "missed": 49,
+        "miss_rate": 0.7
+      },
+      "0.2": {
+        "frames": 70,
+        "detected": 19,
+        "missed": 51,
+        "miss_rate": 0.7286
+      },
+      "0.25": {
+        "frames": 70,
+        "detected": 18,
+        "missed": 52,
+        "miss_rate": 0.7429
+      },
+      "0.3": {
+        "frames": 70,
+        "detected": 17,
+        "missed": 53,
+        "miss_rate": 0.7571
+      },
+      "0.35": {
+        "frames": 70,
+        "detected": 15,
+        "missed": 55,
+        "miss_rate": 0.7857
+      },
+      "0.4": {
+        "frames": 70,
+        "detected": 14,
+        "missed": 56,
+        "miss_rate": 0.8
+      },
+      "0.45": {
+        "frames": 70,
+        "detected": 14,
+        "missed": 56,
+        "miss_rate": 0.8
+      },
+      "0.5": {
+        "frames": 70,
+        "detected": 12,
+        "missed": 58,
+        "miss_rate": 0.8286
+      },
+      "0.55": {
+        "frames": 70,
+        "detected": 9,
+        "missed": 61,
+        "miss_rate": 0.8714
+      },
+      "0.6": {
+        "frames": 70,
+        "detected": 7,
+        "missed": 63,
+        "miss_rate": 0.9
+      },
+      "0.65": {
+        "frames": 70,
+        "detected": 6,
+        "missed": 64,
+        "miss_rate": 0.9143
+      },
+      "0.7": {
+        "frames": 70,
+        "detected": 5,
+        "missed": 65,
+        "miss_rate": 0.9286
+      }
+    },
+    "negative": {
+      "0.15": {
+        "frames": 149,
+        "false_alarms": 23,
+        "rate": 0.1544
+      },
+      "0.2": {
+        "frames": 149,
+        "false_alarms": 22,
+        "rate": 0.1477
+      },
+      "0.25": {
+        "frames": 149,
+        "false_alarms": 14,
+        "rate": 0.094
+      },
+      "0.3": {
+        "frames": 149,
+        "false_alarms": 9,
+        "rate": 0.0604
+      },
+      "0.35": {
+        "frames": 149,
+        "false_alarms": 4,
+        "rate": 0.0268
+      },
+      "0.4": {
+        "frames": 149,
+        "false_alarms": 4,
+        "rate": 0.0268
+      },
+      "0.45": {
+        "frames": 149,
+        "false_alarms": 3,
+        "rate": 0.0201
+      },
+      "0.5": {
+        "frames": 149,
+        "false_alarms": 1,
+        "rate": 0.0067
+      },
+      "0.55": {
+        "frames": 149,
+        "false_alarms": 0,
+        "rate": 0.0
+      },
+      "0.6": {
+        "frames": 149,
+        "false_alarms": 0,
+        "rate": 0.0
+      },
+      "0.65": {
+        "frames": 149,
+        "false_alarms": 0,
+        "rate": 0.0
+      },
+      "0.7": {
+        "frames": 149,
+        "false_alarms": 0,
+        "rate": 0.0
+      }
+    }
+  }
+}

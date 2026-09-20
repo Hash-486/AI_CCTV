@@ -1,0 +1,25 @@
+{
+  "T_MATCH": 0.7327,
+  "T_NEW": 0.5617,
+  "T_MARGIN": 0.0957,
+  "T_VETO": 0.6636,
+  "DEEPSORT_MAX_COS_DIST": 0.3735,
+  "_diagnostics": {
+    "intra_n": 17492,
+    "intra_long_n": 12655,
+    "inter_n": 76,
+    "used_hard_positives": true,
+    "intra_mean": 0.8405,
+    "intra_std": 0.1127,
+    "intra_long_mean": 0.8203,
+    "inter_mean": 0.6068,
+    "inter_std": 0.0903,
+    "separability_gap": 0.2135,
+    "t_match_from_negatives": 0.7327,
+    "t_match_from_hard_positives": 0.7439,
+    "recall_at_T_MATCH": 0.7708,
+    "false_merge_at_T_MATCH": 0.0132,
+    "best_balanced_accuracy": 0.9033,
+    "best_balanced_threshold": 0.736
+  }
+}

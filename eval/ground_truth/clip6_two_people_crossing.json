@@ -1,0 +1,11 @@
+{
+  "clip": "clip6_two_people_crossing.avi",
+  "fps": 20.0,
+  "frames": 653,
+  "scenario": "Two people crossing  (~90s, NEEDS 2)",
+  "people": {
+    "A": "describe the person here"
+  },
+  "events": [],
+  "raw_marks": []
+}

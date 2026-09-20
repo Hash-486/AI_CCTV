@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "accuracy": 1.0,
+    "false_split_rate": 0.0,
+    "undecided_rate": 0.0,
+    "shared_identities": 0,
+    "duplicate_id_frames": 0,
+    "n_events": 8
+  },
+  "per_clip": {
+    "clip1_short_reentry.avi": {
+      "events": [
+        {
+          "person": "A",
+          "gap_frames": 342,
+          "gap_seconds": 17.1,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 222,
+          "gap_seconds": 11.1,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 219,
+          "gap_seconds": 10.95,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 196,
+          "gap_seconds": 9.8,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        }
+      ],
+      "n_events": 4,
+      "n_correct": 4,
+      "n_undecided": 0,
+      "identities_per_person": {
+        "A": 1
+      },
+      "shared_identities": [],
+      "duplicate_id_frames": 0,
+      "identities_total": 1
+    },
+    "clip6_two_people_crossing.avi": {
+      "events": [],
+      "n_events": 0,
+      "n_correct": 0,
+      "n_undecided": 0,
+      "identities_per_person": {},
+      "shared_identities": [],
+      "duplicate_id_frames": 0,
+      "identities_total": 3
+    },
+    "clip8_empty_scene.avi": {
+      "events": [],
+      "n_events": 0,
+      "n_correct": 0,
+      "n_undecided": 0,
+      "identities_per_person": {},
+      "shared_identities": [],
+      "duplicate_id_frames": 0,
+      "identities_total": 0
+    },
+    "clip9_even_lighting.avi": {
+      "events": [
+        {
+          "person": "A",
+          "gap_frames": 260,
+          "gap_seconds": 13.0,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 191,
+          "gap_seconds": 9.55,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 214,
+          "gap_seconds": 10.7,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        },
+        {
+          "person": "A",
+          "gap_frames": 199,
+          "gap_seconds": 9.95,
+          "identity_before": 1,
+          "identity_after": 1,
+          "correct": true,
+          "undecided": false,
+          "note": ""
+        }
+      ],
+      "n_events": 4,
+      "n_correct": 4,
+      "n_undecided": 0,
+      "identities_per_person": {
+        "A": 1
+      },
+      "shared_identities": [],
+      "duplicate_id_frames": 0,
+      "identities_total": 1
+    }
+  }
+}

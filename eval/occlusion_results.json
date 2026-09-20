@@ -1,0 +1,67 @@
+{
+  "clip": "20260411_100507.avi",
+  "frames": 210,
+  "subject_identity": 1,
+  "subject_span": [
+    7,
+    208
+  ],
+  "mode": "fill",
+  "trials": [
+    {
+      "n_frames": 5,
+      "gap_start": 105,
+      "gap_end": 110,
+      "identity_before": 1,
+      "identity_after": 2,
+      "retained": false,
+      "reacquired": true,
+      "leak_frames": 0,
+      "identities_total": 2
+    },
+    {
+      "n_frames": 10,
+      "gap_start": 103,
+      "gap_end": 113,
+      "identity_before": 1,
+      "identity_after": 2,
+      "retained": false,
+      "reacquired": true,
+      "leak_frames": 0,
+      "identities_total": 2
+    },
+    {
+      "n_frames": 20,
+      "gap_start": 98,
+      "gap_end": 118,
+      "identity_before": 1,
+      "identity_after": null,
+      "retained": false,
+      "reacquired": false,
+      "leak_frames": 0,
+      "identities_total": 2
+    },
+    {
+      "n_frames": 30,
+      "gap_start": 93,
+      "gap_end": 123,
+      "identity_before": 1,
+      "identity_after": null,
+      "retained": false,
+      "reacquired": false,
+      "leak_frames": 0,
+      "identities_total": 2
+    },
+    {
+      "n_frames": 60,
+      "gap_start": 78,
+      "gap_end": 138,
+      "identity_before": 1,
+      "identity_after": null,
+      "retained": false,
+      "reacquired": false,
+      "leak_frames": 0,
+      "identities_total": 2
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Core CV / detection / tracking pipeline
+opencv-python
+numpy
+ultralytics
+mediapipe
+deep-sort-realtime
+
+# torchreid (deep-person-reid, imported via sys.path in tracker.py) runtime deps
+h5py
+Pillow
+six
+scipy
+matplotlib
+tensorboard
+future
+yacs
+gdown
+imageio
+chardet
+
+# torch / torchvision installed separately with the CUDA index (see install steps)

@@ -1,0 +1,107 @@
+# ============================================================
+# class_map.yaml -- source class -> canonical class, for stage-1 merging
+# ============================================================
+#
+# Every class in every source must appear here. An unmapped class is a HARD
+# ERROR in build_dataset.py, not a silent skip -- that is the entire point of
+# this file. Class names are matched EXACTLY and case-sensitively, because
+# several public weapon datasets carry both `Knife` and `knife` as separate
+# classes, and class indices differ across every source.
+#
+# Targets:
+#   guns | knife | long_gun   canonical classes
+#   __background__            image kept, label file written EMPTY (hard negative)
+#   __drop__                  annotation removed; image kept only if other labels remain
+#
+# To revert to a 2-class model, change the `classes:` list to [guns, knife] and
+# every `long_gun` target below to `guns`, then re-run build_dataset.py. No code
+# changes are needed -- the taxonomy decision lives entirely in this file.
+
+classes: [guns, knife, long_gun]
+
+sources:
+
+  # --- the existing project dataset -----------------------------------------
+  weapon2_original:
+    path: "Weapon 2.v2i.yolov8"          # relative to the project root
+    map:
+      guns: guns
+      knife: knife
+
+  # --- guns -----------------------------------------------------------------
+  gun_em2023:                             # 3,176 imgs (2,080 unique, 1.5x augmented)
+    map:
+      pistol: guns
+
+  guns_kaggle_cctv:                       # 3,356 imgs, no augmentation
+    map:
+      guns: guns
+
+  guns_rifles:                            # 7,105 imgs, no augmentation
+    map:                                  # the only long_gun source that survived export
+      Handgun: guns
+      Rifle: long_gun
+
+  # --- knife ----------------------------------------------------------------
+  knife_menon:                            # 2,078 imgs, NATIVE resolution, no augmentation
+    map:
+      knife: knife
+
+  knife_zqssx:                            # 4,075 imgs (3,005 unique, 1.36x augmented)
+    map:
+      knife: knife
+
+  knife_porject:                          # 500 imgs, no augmentation
+    map:
+      knife: knife
+
+  # --- real CCTV (stage 2) ---------------------------------------------------
+  # TODO(you): write the cctv_v3 mapping. Left commented out so build_dataset.py
+  # keeps working until it is filled in -- an unmapped class is a hard error, and
+  # a half-written block here would break every rebuild.
+  #
+  # Downloaded by fetch_datasets.py as `cctv_v3`
+  # (yolo-serbot/weapon-detection-cctv-v3-dataset-8zgsk v1, 2,614 imgs, native
+  # colour, CC BY 4.0). Verified class histogram from the Roboflow API:
+  #
+  #   rifle 995 · knife 735 · weapon 646 · gun 309 · guns 26 · Knife 13 ·
+  #   phone 5 · hand 39 · ruler 2 · pistol 1 · person 3468
+  #
+  # Three of these are traps, and the file header explains why the mapping is
+  # written by NAME: note `Knife` and `knife` are BOTH present and distinct.
+  #
+  # cctv_v3:
+  #   map:
+  #     ... 11 entries, one per class above ...
+
+  # --- excluded -------------------------------------------------------------
+  guns_mms73:
+    exclude: true
+    reason: >
+      Poisons the guns/long_gun boundary. Its v4 export collapses every class to
+      `gun`, but 891 of its 2,488 unique source images are named `Rifles-*` --
+      so ~36% of its "guns" are actually rifles. Training on it would label
+      rifles as `guns` while guns_rifles labels them `long_gun`, teaching the
+      model both answers. Its headline 23,130 images are also only 2,488 unique
+      (9.3x Roboflow augmentation), so excluding it costs little real data.
+      If reverting to a 2-class taxonomy, this source becomes usable again.
+    map:
+      gun: guns
+      d: __drop__                         # 3 instances, junk class
+
+  # --- hard negatives -------------------------------------------------------
+  # Sohas is the only source anywhere with hard negatives: objects held in the
+  # hand that are routinely mistaken for weapons. Across all 26 Roboflow projects
+  # surveyed, the best `phone` count was five. These four classes are imported as
+  # BACKGROUND -- image kept, label file empty -- which teaches "do not fire on
+  # this" without adding classes or touching the runtime pipeline.
+  # Class names below are provisional until the download is verified; the
+  # Spanish names are how the Granada authors labelled them.
+  sohas:
+    map:
+      pistol: guns
+      knife: knife
+      smartphone: __background__
+      monedero: __background__            # purse
+      billete: __background__             # banknote
+      tarjeta: __background__             # card

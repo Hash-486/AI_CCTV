@@ -1,0 +1,40 @@
+# Datasets, downloaded sources, training runs, model weights -- large and
+# regenerable, don't belong in git history.
+/data/
+/datasets/
+/models/
+/runs/
+/archive/
+/output/
+
+# Vendored external repo -- a dependency, not this project's code.
+/third_party/
+
+# Binary artifacts wherever they land.
+*.pt
+*.onnx
+*.pth
+*.zip
+*.avi
+*.mp4
+
+# Video eval clips are large; keep the ground truth and scripts.
+/eval/clips/
+docs/presentation/videos/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Office lock files
+~$*
+
+# Generated audit/report output
+MANIFEST.txt
+
+# Claude Code / editor state -- never commit unless asked.
+/.claude/
+/.remember/
+/.cursor/
+CLAUDE.md

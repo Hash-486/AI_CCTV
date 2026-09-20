@@ -1,0 +1,73 @@
+{
+  "clip": "clip9_even_lighting.avi",
+  "fps": 20.0,
+  "frames": 1874,
+  "scenario": "Same re-entry, NO backlight  (~60s, ALONE)",
+  "people": {
+    "A": "describe the person here"
+  },
+  "events": [
+    {
+      "person": "A",
+      "exit_frame": 204,
+      "return_frame": 464,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 672,
+      "return_frame": 863,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 1059,
+      "return_frame": 1273,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 1501,
+      "return_frame": 1700,
+      "note": ""
+    }
+  ],
+  "raw_marks": [
+    {
+      "type": "exit",
+      "frame": 204
+    },
+    {
+      "type": "return",
+      "frame": 464
+    },
+    {
+      "type": "exit",
+      "frame": 672
+    },
+    {
+      "type": "return",
+      "frame": 863
+    },
+    {
+      "type": "exit",
+      "frame": 1059
+    },
+    {
+      "type": "return",
+      "frame": 1273
+    },
+    {
+      "type": "exit",
+      "frame": 1501
+    },
+    {
+      "type": "return",
+      "frame": 1700
+    },
+    {
+      "type": "exit",
+      "frame": 1842
+    }
+  ]
+}

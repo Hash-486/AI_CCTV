@@ -1,0 +1,36 @@
+{
+  "MOT17-02-FRCNN": {
+    "IDF1": 0.5758,
+    "MOTA": 0.3675,
+    "IDSW": 12,
+    "MT": 13,
+    "ML": 28,
+    "n_gt_ids": 53,
+    "misses": 5260,
+    "false_positives": 669,
+    "recall": 0.44,
+    "false_merges": 6,
+    "false_splits": 7,
+    "identities_created": 39,
+    "reentry_events": 0,
+    "reentry_correct": 0,
+    "reentry_accuracy": null
+  },
+  "MOT17-04-FRCNN": {
+    "IDF1": 0.4559,
+    "MOTA": 0.2906,
+    "IDSW": 25,
+    "MT": 9,
+    "ML": 43,
+    "n_gt_ids": 79,
+    "misses": 27320,
+    "false_positives": 906,
+    "recall": 0.3139,
+    "false_merges": 6,
+    "false_splits": 9,
+    "identities_created": 59,
+    "reentry_events": 0,
+    "reentry_correct": 0,
+    "reentry_accuracy": null
+  }
+}

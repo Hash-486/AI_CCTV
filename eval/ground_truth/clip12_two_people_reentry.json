@@ -1,0 +1,11 @@
+{
+  "clip": "clip12_two_people_reentry.avi",
+  "fps": 20.0,
+  "frames": 996,
+  "scenario": "Two people ENTER + EXIT + RETURN  (~90s, NEEDS 2)",
+  "people": {
+    "A": "describe the person here"
+  },
+  "events": [],
+  "raw_marks": []
+}

@@ -1,0 +1,52 @@
+{
+  "clip": "clip12_two_people_reentry.avi",
+  "frames": 996,
+  "duration_s": 49.8,
+  "identities_created": 2,
+  "re_matches": 3,
+  "samples_admitted": 157,
+  "samples_rejected": 128,
+  "identities": [
+    {
+      "identity": 1,
+      "visits": 3,
+      "re_entries": 2,
+      "total_visible_s": 38.0,
+      "segments": [
+        {
+          "enter_s": 4.4,
+          "exit_s": 21.8,
+          "frames": 348
+        },
+        {
+          "enter_s": 24.2,
+          "exit_s": 29.7,
+          "frames": 111
+        },
+        {
+          "enter_s": 34.8,
+          "exit_s": 49.8,
+          "frames": 301
+        }
+      ]
+    },
+    {
+      "identity": 2,
+      "visits": 2,
+      "re_entries": 1,
+      "total_visible_s": 15.3,
+      "segments": [
+        {
+          "enter_s": 24.6,
+          "exit_s": 29.3,
+          "frames": 94
+        },
+        {
+          "enter_s": 34.3,
+          "exit_s": 44.9,
+          "frames": 213
+        }
+      ]
+    }
+  ]
+}

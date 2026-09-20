@@ -1,0 +1,72 @@
+{
+  "OSNet x1_0 (re-ID: msmt17)": {
+    "rank1": 0.5719,
+    "rank5": 0.7378,
+    "rank10": 0.7966,
+    "mAP": 0.3043,
+    "n_query_valid": 3368,
+    "dim": 512,
+    "embed_seconds": 17.2,
+    "ms_per_image": 0.746
+  },
+  "OSNet x1_0 (re-ID: market1501)": {
+    "rank1": 0.943,
+    "rank5": 0.978,
+    "rank10": 0.9857,
+    "mAP": 0.8357,
+    "n_query_valid": 3368,
+    "dim": 512,
+    "embed_seconds": 36.0,
+    "ms_per_image": 1.559
+  },
+  "OSNet x1_0 (re-ID: duke)": {
+    "rank1": 0.5006,
+    "rank5": 0.6681,
+    "rank10": 0.7337,
+    "mAP": 0.2252,
+    "n_query_valid": 3368,
+    "dim": 512,
+    "embed_seconds": 14.7,
+    "ms_per_image": 0.635
+  },
+  "OSNet x1_0 (ImageNet)": {
+    "rank1": 0.1452,
+    "rank5": 0.2782,
+    "rank10": 0.3432,
+    "mAP": 0.0445,
+    "n_query_valid": 3368,
+    "dim": 512,
+    "embed_seconds": 14.7,
+    "ms_per_image": 0.638
+  },
+  "MobileNetV2 (ImageNet)": {
+    "rank1": 0.0683,
+    "rank5": 0.1532,
+    "rank10": 0.2052,
+    "mAP": 0.0218,
+    "n_query_valid": 3368,
+    "dim": 1280,
+    "embed_seconds": 20.3,
+    "ms_per_image": 0.879
+  },
+  "MobileNetV3-L (ImageNet)": {
+    "rank1": 0.0977,
+    "rank5": 0.1894,
+    "rank10": 0.247,
+    "mAP": 0.0257,
+    "n_query_valid": 3368,
+    "dim": 960,
+    "embed_seconds": 15.6,
+    "ms_per_image": 0.677
+  },
+  "MobileNetV3-S (ImageNet)": {
+    "rank1": 0.1149,
+    "rank5": 0.2295,
+    "rank10": 0.3014,
+    "mAP": 0.035,
+    "n_query_valid": 3368,
+    "dim": 576,
+    "embed_seconds": 11.0,
+    "ms_per_image": 0.475
+  }
+}

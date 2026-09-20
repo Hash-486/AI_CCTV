@@ -1,0 +1,38 @@
+{
+  "centroid only": {
+    "n_intra": 939,
+    "n_inter": 468,
+    "intra": 0.8394,
+    "inter": 0.6957,
+    "separability": 0.1436,
+    "balanced_acc": 0.8802,
+    "recall_at_1pct_fm": 0.7497
+  },
+  "best sample only": {
+    "n_intra": 939,
+    "n_inter": 468,
+    "intra": 0.8584,
+    "inter": 0.6893,
+    "separability": 0.1691,
+    "balanced_acc": 0.895,
+    "recall_at_1pct_fm": 0.77
+  },
+  "hybrid max(c, 0.9*b)": {
+    "n_intra": 939,
+    "n_inter": 468,
+    "intra": 0.84,
+    "inter": 0.6967,
+    "separability": 0.1433,
+    "balanced_acc": 0.8839,
+    "recall_at_1pct_fm": 0.7572
+  },
+  "hybrid + body ratios (0.15)": {
+    "n_intra": 939,
+    "n_inter": 468,
+    "intra": 0.8546,
+    "inter": 0.7145,
+    "separability": 0.1401,
+    "balanced_acc": 0.8636,
+    "recall_at_1pct_fm": 0.738
+  }
+}

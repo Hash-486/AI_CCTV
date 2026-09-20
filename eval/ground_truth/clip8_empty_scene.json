@@ -1,0 +1,11 @@
+{
+  "clip": "clip8_empty_scene.avi",
+  "fps": 20.0,
+  "frames": 901,
+  "scenario": "Empty scene / ghost check  (~30s, NOBODY)",
+  "people": {
+    "A": "describe the person here"
+  },
+  "events": [],
+  "raw_marks": []
+}

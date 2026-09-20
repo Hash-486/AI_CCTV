@@ -1,0 +1,62 @@
+{
+  "stage1 (public only)": {
+    "weights": "C:\\Users\\kvenk\\Documents\\AI_CCTV\\Review_1.2\\stage1_yolo26s_640\\weights\\best.pt",
+    "miss": {
+      "0.25": 55.6,
+      "0.45": 69.8,
+      "0.55": 85.7
+    },
+    "false_pos": {
+      "0.25": 17,
+      "0.45": 4,
+      "0.55": 2
+    },
+    "public_mAP50": 0.8455,
+    "public_mAP50_95": 0.654
+  },
+  "stage2 (in-domain)": {
+    "weights": "C:\\Users\\kvenk\\Documents\\AI_CCTV\\Review_1.2\\stage2_indomain\\weights\\best.pt",
+    "miss": {
+      "0.25": 19.0,
+      "0.45": 54.0,
+      "0.55": 65.1
+    },
+    "false_pos": {
+      "0.25": 8,
+      "0.45": 1,
+      "0.55": 1
+    },
+    "public_mAP50": 0.7997,
+    "public_mAP50_95": 0.5933
+  },
+  "runA (viewpoint aug)": {
+    "weights": "C:\\Users\\kvenk\\Documents\\AI_CCTV\\Review_1.2\\stage2_runA\\weights\\best.pt",
+    "miss": {
+      "0.25": 0.0,
+      "0.45": 0.0,
+      "0.55": 1.6
+    },
+    "false_pos": {
+      "0.25": 75,
+      "0.45": 45,
+      "0.55": 25
+    },
+    "public_mAP50": 0.7903,
+    "public_mAP50_95": 0.5103
+  },
+  "runB (aug + replay)": {
+    "weights": "C:\\Users\\kvenk\\Documents\\AI_CCTV\\Review_1.2\\stage2_runB\\weights\\best.pt",
+    "miss": {
+      "0.25": 0.0,
+      "0.45": 0.0,
+      "0.55": 0.0
+    },
+    "false_pos": {
+      "0.25": 53,
+      "0.45": 25,
+      "0.55": 12
+    },
+    "public_mAP50": 0.7592,
+    "public_mAP50_95": 0.527
+  }
+}

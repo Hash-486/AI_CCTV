@@ -1,0 +1,77 @@
+{
+  "clip": "clip1_short_reentry.avi",
+  "fps": 20.0,
+  "frames": 2565,
+  "scenario": "Short re-entry  (~60s, ALONE)",
+  "people": {
+    "A": "describe the person here"
+  },
+  "events": [
+    {
+      "person": "A",
+      "exit_frame": 291,
+      "return_frame": 633,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 791,
+      "return_frame": 1013,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 1199,
+      "return_frame": 1418,
+      "note": ""
+    },
+    {
+      "person": "A",
+      "exit_frame": 2118,
+      "return_frame": 2314,
+      "note": ""
+    }
+  ],
+  "raw_marks": [
+    {
+      "type": "exit",
+      "frame": 291
+    },
+    {
+      "type": "return",
+      "frame": 633
+    },
+    {
+      "type": "exit",
+      "frame": 791
+    },
+    {
+      "type": "return",
+      "frame": 1013
+    },
+    {
+      "type": "exit",
+      "frame": 1199
+    },
+    {
+      "type": "return",
+      "frame": 1418
+    },
+    {
+      "type": "return",
+      "frame": 1937
+    },
+    {
+      "type": "exit",
+      "frame": 2118
+    },
+    {
+      "type": "return",
+      "frame": 2314
+    },
+    {
+      "type": "exit",
+      "frame": 2504
+    }
+  ]
+}
